@@ -1,6 +1,6 @@
 {
     "config": {
-        "L1": "YourLanguage",
+        "L1": "Mvskoke",
         "L2": "English",
         "l1_search_strategy": "weighted_levenstein",
         "l2_search_strategy": "liblevenstein_automata",
@@ -81,7 +81,9 @@
             "Z"
         ],
         "optional_field_name": "Optional Field",
-        "build": "1694556630",
+        "aboutPageImg": "https://placehold.co/600x400",
+        "aboutPageDescription": "Please change this text to describe your dictionary in a bit more detail.",
+        "build": "1768551884",
         "no_sort_characters": [],
         "sorting_field": "word",
         "l1_keys_to_index": [
@@ -99,17 +101,20 @@
             "definition"
         ]
     },
-    "data": [{
-        "manifest": {
-            "file_type": "csv",
-            "name": "YourData",
-            "skip_header": false,
-            "transducers": [],
-            "targets": {
-                "word": "0",
-                "definition": "1"
-            }
-        },
-        "resource": "data.csv"
-    }]
+    "data": [
+        {
+            "manifest": {
+                "file_type": "xlsx",
+                "name": "YourData",
+                "skip_header": false,
+                "transducers": [],
+                "targets": {
+                    "word": "A",
+                    "definition": "B",
+                    "source": ""
+                }
+            },
+            "resource": "data.xlsx"
+        }
+    ]
 }
