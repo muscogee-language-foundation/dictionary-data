@@ -1,38 +1,20 @@
-# Mother Tongues Dictionaries Starter (MTD)
+# Data for Mvskoke Dictionary
+Using [Mother Tongues Dictionary](https://www.mothertongues.org)
 
 [![license](https://img.shields.io/github/license/MotherTongues/mtd-starter.svg)](LICENSE)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-This is a starter kit for building a [Mother Tongues Dictionary](https://www.mothertongues.org).
-
-Please visit the [repo](https://github.com/MotherTongues/mothertongues) or [docs](https://docs.mothertongues.org) for more information.
-
-## Table of Contents
-
-- [Mother Tongues Dictionaries Starter (MTD)](#mother-tongues-dictionaries-starter-mtd)
-  - [Table of Contents](#table-of-contents)
-  - [Background](#background)
-  - [Usage](#usage)
-  - [Contributing](#contributing)
-  - [Acknowledgements](#acknowledgements)
-    - [Contributors](#contributors)
-  - [License](#license)
-
-## Background
-
-This project started as just a single dictionary for Gitxsan - a language spoken in Northern British Columbia, but it became quickly apparent that many communities also had the same problem. That is, they had some dictionary data but all of the options for sharing that data online were prohibitively expensive. MTD aims to make it easier to create online digital dictionary resources.
-
-This is a starter kit for building your own dictionary.
-
-**Note** - Just because you _can_ make an online dictionary does _not_ mean you _should_. Before making a dictionary, you must have clear consent from the language community in order to publish a dictionary. For some background on why this is important, please read sections 1 and 2.1 [here](http://oxfordre.com/linguistics/view/10.1093/acrefore/9780199384655.001.0001/acrefore-9780199384655-e-8)
+For more info about Mother Tongues Dictionary, visit the [repo](https://github.com/MotherTongues/mothertongues) or [docs](https://docs.mothertongues.org)
 
 ## Usage
+Use alongside the flutter frontend for [Mvskoke Dictionary App](https://github.com/muscogee-language-foundation/mvskoke-dictionary) 
 
-In order to create a Mother Tongues Dictionary you will need to adapt the configuration files in `config` and replace the data in `data`:
-
-You can find out more about how to create these files against the MTD configuration schema by visiting the [docs](https://docs.mothertongues.org)
-
-Once you have those files, you can either create a dictionary programatically or using the command line interface. This repo also automatically builds with GitHub Actions.
+To run:
+- First clone this repo.  
+- Then follow the docs to install the [mothertongues](https://docs.mothertongues.org/latest/developer/prerequisites/) repo and python package.
+- Build the .json file: `poetry run mothertongues build-and-run <repo_location>/config.mtd.json `
+- Export the `dictionary_data.json` file from `<MTD_repo>/mothertongues/ui/assets/dictionary_data.json` and copy it to the `assets` folder in the repo for the UI [mvskoke-dictionary](https://github.com/muscogee-language-foundation/mvskoke-dictionary)
+- Continue following the instructions there for building and deploying the flutter app. 
 
 ## Contributing
 
@@ -48,8 +30,4 @@ Thank you to all other contributors for support with improving MotherTongues, fi
 
 ### Contributors
 
-This project exists thanks to all the people who contribute.
-
-## License
-
-[MIT © Aidan Pine.](LICENSE)
+This project exists thanks to all the people who contribute.  Thank you to Aidan Pine for all his work.
